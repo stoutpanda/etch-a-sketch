@@ -21,7 +21,7 @@ function createEtchGrid(gridSize) {
 }
 
 function changeColor(e) {
-    console.log(e);
+   e.target.style.backgroundColor = "black";
 }
 
 createEtchGrid(gridSize);

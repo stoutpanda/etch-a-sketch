@@ -9,6 +9,7 @@
 body {
   margin: 0;
   background-color: var(--background);
+  color: var(--dark-1);
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
 }
@@ -31,6 +32,11 @@ header {
 .btn {
   background-color: var(--silver-pink);
   border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--light-1);
+  font-weight: 900;
+  font-style: oblique;
 }
 
 .grid-container {
@@ -38,7 +44,7 @@ header {
   background-color: var(--dark-1);
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  border: 10px solid var(--border-yellow);
+  border: 10px solid var(--silver-pink);
   width: 500px;
   height: 500px;
 }

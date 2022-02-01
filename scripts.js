@@ -23,8 +23,8 @@ function resetGrid() {
   gridItems.forEach((target = (target) => target.remove()));
   let usrGridSize = prompt("Please enter the new grid size, max of 99.", "16");
 
-  gridSize = usrGridSize <= 99 ? usrGridSize : 16;
-  createEtchGrid(gridSize);
+    gridSize = (usrGridSize <= 99 && usrGridSize != undefined) ? usrGridSize : 16;
+    createEtchGrid(gridSize);
 }
 
 createEtchGrid(gridSize);

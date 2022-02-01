@@ -1,8 +1,5 @@
-
-
-//create css div grid
 let gridSize = 16;
-let gridContainer = document.querySelector(".grid-container");
+const gridContainer = document.querySelector(".grid-container");
 
 function createEtchGrid(gridSize) {
     let id = 0;
@@ -27,6 +24,9 @@ function changeColor(e) {
 function resetGrid() {
     let gridItems = document.querySelectorAll(".grid-item");
     gridItems.forEach(target = target => target.remove());
+    let usrGridSize = prompt("Please enter the new grid size, max of 99.", "16");
+    
+    gridSize = usrGridSize <= 99 ? usrGridSize : 16;
     createEtchGrid(gridSize);
 }
 

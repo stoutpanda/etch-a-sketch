@@ -25,8 +25,8 @@ function changeColor(e) {
 }
 
 function resetGrid() {
-    let gridItems = document.querySelectorAll("#grid-item");
-    gridItems.forEach( target = target => target.remove());
+    let gridItems = document.querySelectorAll(".grid-item");
+    gridItems.forEach(target = target => target.remove());
     createEtchGrid(gridSize);
 }
 

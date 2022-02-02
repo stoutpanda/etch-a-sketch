@@ -3,6 +3,9 @@ const gridContainer = document.querySelector(".grid-container");
 
 function createEtchGrid(gridSize) {
   let id = 0;
+  gridContainer.style.gridTemplateColumns =`repeat(${gridSize}, 1fr)`;
+  gridContainer.style.gridTemplateRows =`repeat(${gridSize}, 1fr)`;
+
   gridSize = gridSize * gridSize;
   for (i = 0; i < gridSize; i++) {
     id++;
@@ -17,6 +20,7 @@ function createEtchGrid(gridSize) {
 function changeColor(e) {
   e.target.style.backgroundColor = "black";
 }
+
 
 function resetGrid() {
   let gridItems = document.querySelectorAll(".grid-item");
